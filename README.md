@@ -23,4 +23,5 @@
     [self.view addSubview:newButton];
     
 ##pod使用
+   pod 'XYYUIKit', '~> 1.0.0'
 
