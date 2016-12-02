@@ -13,6 +13,10 @@
 		2EEBA9E01DF1600700563C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBA9DE1DF1600700563C48 /* Main.storyboard */; };
 		2EEBA9E21DF1600700563C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBA9E11DF1600700563C48 /* Assets.xcassets */; };
 		2EEBA9E51DF1600700563C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBA9E31DF1600700563C48 /* LaunchScreen.storyboard */; };
+		2EEBAA011DF1616900563C48 /* UIButton+XYYButtonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBA9FB1DF1616900563C48 /* UIButton+XYYButtonKit.m */; };
+		2EEBAA021DF1616900563C48 /* UIImageView+XYYImageViewKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBA9FD1DF1616900563C48 /* UIImageView+XYYImageViewKit.m */; };
+		2EEBAA031DF1616900563C48 /* UILabel+XYYLabelKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEBA9FF1DF1616900563C48 /* UILabel+XYYLabelKit.m */; };
+		2EEBAA051DF1616F00563C48 /* ui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBAA041DF1616F00563C48 /* ui@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		2EEBA9E11DF1600700563C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EEBA9E41DF1600700563C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EEBA9E61DF1600700563C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EEBA9FA1DF1616900563C48 /* UIButton+XYYButtonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XYYButtonKit.h"; sourceTree = "<group>"; };
+		2EEBA9FB1DF1616900563C48 /* UIButton+XYYButtonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XYYButtonKit.m"; sourceTree = "<group>"; };
+		2EEBA9FC1DF1616900563C48 /* UIImageView+XYYImageViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XYYImageViewKit.h"; sourceTree = "<group>"; };
+		2EEBA9FD1DF1616900563C48 /* UIImageView+XYYImageViewKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XYYImageViewKit.m"; sourceTree = "<group>"; };
+		2EEBA9FE1DF1616900563C48 /* UILabel+XYYLabelKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XYYLabelKit.h"; sourceTree = "<group>"; };
+		2EEBA9FF1DF1616900563C48 /* UILabel+XYYLabelKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XYYLabelKit.m"; sourceTree = "<group>"; };
+		2EEBAA001DF1616900563C48 /* XYYUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYYUIKit.h; sourceTree = "<group>"; };
+		2EEBAA041DF1616F00563C48 /* ui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 				2EEBA9D91DF1600700563C48 /* AppDelegate.m */,
 				2EEBA9DB1DF1600700563C48 /* ViewController.h */,
 				2EEBA9DC1DF1600700563C48 /* ViewController.m */,
+				2EEBA9F91DF1616900563C48 /* Classes */,
 				2EEBA9DE1DF1600700563C48 /* Main.storyboard */,
 				2EEBA9E11DF1600700563C48 /* Assets.xcassets */,
 				2EEBA9E31DF1600700563C48 /* LaunchScreen.storyboard */,
@@ -74,9 +87,24 @@
 		2EEBA9D51DF1600700563C48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2EEBAA041DF1616F00563C48 /* ui@2x.png */,
 				2EEBA9D61DF1600700563C48 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EEBA9F91DF1616900563C48 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2EEBA9FA1DF1616900563C48 /* UIButton+XYYButtonKit.h */,
+				2EEBA9FB1DF1616900563C48 /* UIButton+XYYButtonKit.m */,
+				2EEBA9FC1DF1616900563C48 /* UIImageView+XYYImageViewKit.h */,
+				2EEBA9FD1DF1616900563C48 /* UIImageView+XYYImageViewKit.m */,
+				2EEBA9FE1DF1616900563C48 /* UILabel+XYYLabelKit.h */,
+				2EEBA9FF1DF1616900563C48 /* UILabel+XYYLabelKit.m */,
+				2EEBAA001DF1616900563C48 /* XYYUIKit.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEBAA051DF1616F00563C48 /* ui@2x.png in Resources */,
 				2EEBA9E51DF1600700563C48 /* LaunchScreen.storyboard in Resources */,
 				2EEBA9E21DF1600700563C48 /* Assets.xcassets in Resources */,
 				2EEBA9E01DF1600700563C48 /* Main.storyboard in Resources */,
@@ -152,8 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEBA9DD1DF1600700563C48 /* ViewController.m in Sources */,
+				2EEBAA011DF1616900563C48 /* UIButton+XYYButtonKit.m in Sources */,
 				2EEBA9DA1DF1600700563C48 /* AppDelegate.m in Sources */,
 				2EEBA9D71DF1600700563C48 /* main.m in Sources */,
+				2EEBAA021DF1616900563C48 /* UIImageView+XYYImageViewKit.m in Sources */,
+				2EEBAA031DF1616900563C48 /* UILabel+XYYLabelKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +342,7 @@
 				2EEBA9EB1DF1600700563C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
