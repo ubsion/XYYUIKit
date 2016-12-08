@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EA44FB21DF93890000F1E9B /* XYYMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYYMacro.h; sourceTree = "<group>"; };
 		2EEBA9D21DF1600700563C48 /* XYYUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYYUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEBA9D61DF1600700563C48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2EEBA9D81DF1600700563C48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 				2EEBA9FE1DF1616900563C48 /* UILabel+XYYLabelKit.h */,
 				2EEBA9FF1DF1616900563C48 /* UILabel+XYYLabelKit.m */,
 				2EEBAA001DF1616900563C48 /* XYYUIKit.h */,
+				2EA44FB21DF93890000F1E9B /* XYYMacro.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
