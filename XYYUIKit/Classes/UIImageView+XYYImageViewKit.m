@@ -14,6 +14,7 @@
 {
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.userInteractionEnabled = true;
+    imageView.image = [UIImage imageNamed:imagename];
     return imageView;
 }
 
@@ -24,8 +25,12 @@
     imageView.layer.masksToBounds = YES;
     imageView.image = [UIImage imageNamed:imagename];
     imageView.layer.cornerRadius = cornerRadius;
-    imageView.layer.borderWidth = borderWidth;
-    imageView.layer.borderColor = borderColor.CGColor;
+    if (borderWidth > 0) {
+        imageView.layer.borderWidth = borderWidth;
+    }
+    if (borderColor != nil) {
+        imageView.layer.borderColor = borderColor.CGColor;
+    }
     return imageView;
 }
 

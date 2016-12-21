@@ -13,10 +13,10 @@
 +(UIButton *)buttonWithText:(NSString *)text textColor:(UIColor *)textColor textFontSize:(CGFloat)size action:(SEL)action target:(id)target
 {
     UIButton *button = [[UIButton alloc] init];
-    button = [[UIButton alloc] init];
     [button setTitle:text forState:UIControlStateNormal];
     [button setTitleColor:textColor forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    button.titleLabel.font = [UIFont systemFontOfSize:size];
     return button;
 }
 

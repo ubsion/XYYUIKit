@@ -12,5 +12,11 @@
 #import "UILabel+XYYLabelKit.h"
 #import "UIImageView+XYYImageViewKit.h"
 #import "UIButton+XYYButtonKit.h"
+#import "UITextView+XYYTextView.h"
+#import "XYYMacro.h"
+
+#import "POP.h"
+#import "PresentingAnimationController.h"
+#import "DismissingAnimationController.h"
 
 #endif /* XYYUIKit_h */
