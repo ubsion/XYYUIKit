@@ -1,6 +1,7 @@
 # XYYUIKit
 
-##说明
+##说明(当前最新版本1.0.3)
+
   构建常用的控件，方便使用。比如button,label等
   
 ##使用方法
@@ -23,5 +24,9 @@
     [self.view addSubview:newButton];
     
 ##pod使用
-   pod 'XYYUIKit', '~> 1.0.0'
 
+   pod 'XYYUIKit', '~> 1.0.3'
+   
+   ~~pod 'XYYUIKit', '~> 1.0.0'
+   
+   
