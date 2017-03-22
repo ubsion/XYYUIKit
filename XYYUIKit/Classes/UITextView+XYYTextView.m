@@ -7,8 +7,10 @@
 //
 
 #import "UITextView+XYYTextView.h"
-#import <objc/runtime.h>
 #import "XYYMacro.h"
+#import <objc/runtime.h>
+
+static NSInteger const maxLimitNum = 1000;
 
 @implementation UITextView (XYYTextView)
 @dynamic  limiteNumber;
@@ -32,7 +34,7 @@ static char readayPlaceholderTextkey;
     self.textColor = textColor;
     self.backgroundColor = [UIColor whiteColor];
     //placeholder
-    UILabel *placeholderTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 8, SCREEN_WIDTH - 100, 20)];
+    UILabel *placeholderTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 8, SCREEN_WIDTH - 50, 20)];
     placeholderTextLabel.text = placeholderText;
     placeholderTextLabel.textColor = placeholderColor;//[UIColor colorWithHexString:@"a5bec9"];//[self colorWithHexString:@"B8CAD6"];
     placeholderTextLabel.font = [UIFont systemFontOfSize:fontSize];
@@ -104,7 +106,7 @@ static char readayPlaceholderTextkey;
         [textView resignFirstResponder];
         return NO;
     }
-    if (range.location < self.limiteNumber)
+    if (range.location < self.limiteNumber == 0 ? maxLimitNum : self.limiteNumber)
     {
         return  YES;
     }
@@ -118,7 +120,7 @@ static char readayPlaceholderTextkey;
 - (void)textViewDidChange:(UITextView *)textView
 {
     if (textView == self) {
-        if (textView.text.length > self.limiteNumber) {
+        if (textView.text.length > self.limiteNumber == 0 ? maxLimitNum : self.limiteNumber) {
             textView.text = [textView.text substringToIndex:self.limiteNumber];
         }
     }
@@ -138,6 +140,17 @@ static char readayPlaceholderTextkey;
         placeholderTextLabel.text = self.placeholderText;
     }
     
+}
+
+/**
+ @method 获取指定宽度width的字符串在UITextView上的高度
+ @param textView 待计算的UITextView
+ @param Width 限制字符串显示区域的宽度
+ @result float 返回的高度
+ */
++ (float) heightForString:(UITextView *)textView andWidth:(float)width{
+    CGSize sizeToFit = [textView sizeThatFits:CGSizeMake(width, MAXFLOAT)];
+    return sizeToFit.height;
 }
 
 

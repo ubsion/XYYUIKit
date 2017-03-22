@@ -229,11 +229,11 @@
 		2EEEC41C1E0A7BC700E47AD3 /* PopAnition */ = {
 			isa = PBXGroup;
 			children = (
+				2EEEC4581E0A7BC700E47AD3 /* PresentingAnimationController.h */,
+				2EEEC4591E0A7BC700E47AD3 /* PresentingAnimationController.m */,
 				2EEEC41D1E0A7BC700E47AD3 /* DismissingAnimationController.h */,
 				2EEEC41E1E0A7BC700E47AD3 /* DismissingAnimationController.m */,
 				2EEEC41F1E0A7BC700E47AD3 /* pop */,
-				2EEEC4581E0A7BC700E47AD3 /* PresentingAnimationController.h */,
-				2EEEC4591E0A7BC700E47AD3 /* PresentingAnimationController.m */,
 			);
 			path = PopAnition;
 			sourceTree = "<group>";
