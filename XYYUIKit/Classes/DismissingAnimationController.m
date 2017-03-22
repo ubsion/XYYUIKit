@@ -7,7 +7,8 @@
 //
 
 #import "DismissingAnimationController.h"
-#import "POP.h"
+#import "POPBasicAnimation.h"
+#import "POPSpringAnimation.h"
 
 @interface DismissingAnimationController()
 

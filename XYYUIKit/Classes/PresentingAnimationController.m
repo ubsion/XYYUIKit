@@ -7,7 +7,7 @@
 //
 
 #import "PresentingAnimationController.h"
-#import "POP.h"
+#import "POPSpringAnimation.h"
 
 
 @interface PresentingAnimationController()
