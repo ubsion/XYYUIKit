@@ -75,8 +75,13 @@ static char readayPlaceholderTextkey;
 {
     objc_setAssociatedObject(self, &readayPlaceholderTextkey, readayPlaceholderText, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    if (self.text.length > self.limiteNumber) {
-        self.text = [self.text substringToIndex:self.limiteNumber];
+    NSInteger limit = self.limiteNumber;
+    if (limit == 0) {
+        limit = maxLimitNum;
+    }
+    
+    if (self.text.length > limit) {
+        self.text = [self.text substringToIndex:limit];
     }
     
     
@@ -106,7 +111,13 @@ static char readayPlaceholderTextkey;
         [textView resignFirstResponder];
         return NO;
     }
-    if (range.location < self.limiteNumber == 0 ? maxLimitNum : self.limiteNumber)
+    
+    NSInteger limit = self.limiteNumber;
+    if (limit == 0) {
+        limit = maxLimitNum;
+    }
+    
+    if (range.location < limit)
     {
         return  YES;
     }
@@ -120,8 +131,14 @@ static char readayPlaceholderTextkey;
 - (void)textViewDidChange:(UITextView *)textView
 {
     if (textView == self) {
-        if (textView.text.length > self.limiteNumber == 0 ? maxLimitNum : self.limiteNumber) {
-            textView.text = [textView.text substringToIndex:self.limiteNumber];
+        
+        NSInteger limit = self.limiteNumber;
+        if (limit == 0) {
+            limit = maxLimitNum;
+        }
+        
+        if (textView.text.length > limit) {
+            textView.text = [textView.text substringToIndex:limit];
         }
     }
     

@@ -49,6 +49,7 @@
     /*基本插件TextView*/
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(100, 300 + 50, 160, 44)];
     [textView textViewPlaceholderText:@"请输入文字" fontSize:15 textColor:[UIColor blackColor] placeholderColor:[UIColor lightGrayColor]];
+//    textView.limiteNumber = 10; //limiteNumber 默认1000个字符
     [self.view addSubview:textView];
     
 }
