@@ -2,7 +2,7 @@
 
 ##说明(当前最新版本1.0.3)
 
-  构建常用的控件，方便使用。比如button,label等
+    构建常用的控件，方便使用。比如button,label等
   
 ##使用方法
 
@@ -25,8 +25,8 @@
     
 ##pod使用
 
-   pod 'XYYUIKit', '~> 1.0.3'
+    pod 'XYYUIKit', '~> 1.0.3'
    
-   ~~pod 'XYYUIKit', '~> 1.0.0'
+    ~~pod 'XYYUIKit', '~> 1.0.0'
    
    
