@@ -12,7 +12,7 @@
 #import "UILabel+XYYLabelKit.h"
 #import "UIImageView+XYYImageViewKit.h"
 #import "UIButton+XYYButtonKit.h"
-#import "UITextView+XYYTextView.h"
+#import "UITextView+XYYTextViewKit.h"
 #import "XYYMacro.h"
 
 //#import "POP.h"

@@ -6,13 +6,13 @@
 //  Copyright © 2016年 李昀. All rights reserved.
 //
 
-#import "UITextView+XYYTextView.h"
+#import "UITextView+XYYTextViewKit.h"
 #import "XYYMacro.h"
 #import <objc/runtime.h>
 
 static NSInteger const maxLimitNum = 1000;
 
-@implementation UITextView (XYYTextView)
+@implementation UITextView (XYYTextViewKit)
 @dynamic  limiteNumber;
 static char limiteNumberKey;
 

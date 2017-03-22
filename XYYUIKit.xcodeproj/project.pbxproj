@@ -13,7 +13,7 @@
 		2E7FBD691E8217E2003F9F3E /* UIButton+XYYButtonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD481E8217E2003F9F3E /* UIButton+XYYButtonKit.m */; };
 		2E7FBD6A1E8217E2003F9F3E /* UIImageView+XYYImageViewKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD4A1E8217E2003F9F3E /* UIImageView+XYYImageViewKit.m */; };
 		2E7FBD6B1E8217E2003F9F3E /* UILabel+XYYLabelKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD4C1E8217E2003F9F3E /* UILabel+XYYLabelKit.m */; };
-		2E7FBD6C1E8217E2003F9F3E /* UITextView+XYYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextView.m */; };
+		2E7FBD6C1E8217E2003F9F3E /* UITextView+XYYTextViewkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextViewkit.m */; };
 		2E7FBDAB1E821B85003F9F3E /* DismissingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD711E821B85003F9F3E /* DismissingAnimationController.m */; };
 		2E7FBDAC1E821B85003F9F3E /* PresentingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7FBD731E821B85003F9F3E /* PresentingAnimationController.m */; };
 		2E7FBDAD1E821B85003F9F3E /* pop-ios-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E7FBD771E821B85003F9F3E /* pop-ios-Info.plist */; };
@@ -59,8 +59,8 @@
 		2E7FBD4A1E8217E2003F9F3E /* UIImageView+XYYImageViewKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XYYImageViewKit.m"; sourceTree = "<group>"; };
 		2E7FBD4B1E8217E2003F9F3E /* UILabel+XYYLabelKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XYYLabelKit.h"; sourceTree = "<group>"; };
 		2E7FBD4C1E8217E2003F9F3E /* UILabel+XYYLabelKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XYYLabelKit.m"; sourceTree = "<group>"; };
-		2E7FBD4D1E8217E2003F9F3E /* UITextView+XYYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+XYYTextView.h"; sourceTree = "<group>"; };
-		2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+XYYTextView.m"; sourceTree = "<group>"; };
+		2E7FBD4D1E8217E2003F9F3E /* UITextView+XYYTextViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+XYYTextViewKit.h"; sourceTree = "<group>"; };
+		2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextViewkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+XYYTextViewkit.m"; sourceTree = "<group>"; };
 		2E7FBD501E8217E2003F9F3E /* XYYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYYMacro.h; sourceTree = "<group>"; };
 		2E7FBD511E8217E2003F9F3E /* XYYUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYYUIKit.h; sourceTree = "<group>"; };
 		2E7FBD701E821B85003F9F3E /* DismissingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimationController.h; sourceTree = "<group>"; };
@@ -290,8 +290,8 @@
 				2E7FBD4A1E8217E2003F9F3E /* UIImageView+XYYImageViewKit.m */,
 				2E7FBD4B1E8217E2003F9F3E /* UILabel+XYYLabelKit.h */,
 				2E7FBD4C1E8217E2003F9F3E /* UILabel+XYYLabelKit.m */,
-				2E7FBD4D1E8217E2003F9F3E /* UITextView+XYYTextView.h */,
-				2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextView.m */,
+				2E7FBD4D1E8217E2003F9F3E /* UITextView+XYYTextViewKit.h */,
+				2E7FBD4E1E8217E2003F9F3E /* UITextView+XYYTextViewkit.m */,
 				2E7FBD501E8217E2003F9F3E /* XYYMacro.h */,
 				2E7FBD511E8217E2003F9F3E /* XYYUIKit.h */,
 			);
@@ -401,7 +401,7 @@
 				2E713B5F1E00E2A7007BDAFA /* SMPageControl.m in Sources */,
 				2E7FBDBB1E821B85003F9F3E /* POPGeometry.mm in Sources */,
 				2E7FBDB61E821B85003F9F3E /* POPAnimator.mm in Sources */,
-				2E7FBD6C1E8217E2003F9F3E /* UITextView+XYYTextView.m in Sources */,
+				2E7FBD6C1E8217E2003F9F3E /* UITextView+XYYTextViewkit.m in Sources */,
 				2EB8F4CB1DFFE5E400E4B5F1 /* HotBannerCell.m in Sources */,
 				2E7FBDB91E821B85003F9F3E /* POPCustomAnimation.mm in Sources */,
 				2E7FBD691E8217E2003F9F3E /* UIButton+XYYButtonKit.m in Sources */,

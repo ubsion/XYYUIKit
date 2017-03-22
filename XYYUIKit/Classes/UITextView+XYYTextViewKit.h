@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITextView (XYYTextView)<UITextViewDelegate>
+@interface UITextView (XYYTextViewKit)<UITextViewDelegate>
 
 @property (nonatomic,assign) NSInteger limiteNumber;
 @property (nonatomic,strong) NSString *placeholderText;
