@@ -1,10 +1,10 @@
 # XYYUIKit
 
-##说明(当前最新版本1.0.4)
+## 说明(当前最新版本1.0.4)
 
     构建常用的控件，方便使用。比如button,label等
   
-##使用方法
+## 使用方法
 
     /*基本插件Label*/
     UILabel *myLabel = [UILabel labelTextColor:[UIColor redColor] fontSize:20];
@@ -29,6 +29,6 @@
     [self.view addSubview:textView];
 
     
-##pod使用
+## pod使用
 
     pod 'XYYUIKit', '~> 1.0.4'
