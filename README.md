@@ -33,8 +33,8 @@
 
     pod 'XYYUIKit', '~> 1.0.4'
 
-    ~~pod 'XYYUIKit', '~> 1.0.3'
-   
-    ~~pod 'XYYUIKit', '~> 1.0.0'
-   
+    ~~pod 'XYYUIKit', '~> 1.0.3'~~
+    
+    ~~pod 'XYYUIKit', '~> 1.0.0'~~ 
+   
    
